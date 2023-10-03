@@ -11,9 +11,9 @@ public class EsercizioN1 {
         System.out.println(inputString2 + " è una stringa di lunghezza pari? " + isEvenLength2);
 
 
-        // Test della funzione annoBisestile
-        int year1 = 2020;
-        int year2 = 2023;
+        // Test della funzione anno Bisestile
+        int year1 = 1996;
+        int year2 = 2001;
 
         boolean isLeapYear1 = annoBisestile(year1);
         boolean isLeapYear2 = annoBisestile(year2);
@@ -23,9 +23,18 @@ public class EsercizioN1 {
     }
 
 
-    public static boolean stringaPariDispari(String str) {
+    /*public static boolean stringaPariDispari(String str) {
         int lunghezza = str.length();
         return lunghezza % 2 == 0;
+    }*/
+    public static boolean stringaPariDispari(String str) {
+        int lunghezza = str.length();
+        if (lunghezza % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+
     }
 
     public static boolean annoBisestile(int anno) {
