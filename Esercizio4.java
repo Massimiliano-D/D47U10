@@ -19,5 +19,6 @@ public class Esercizio4 {
                 }
             }
         }
+        input.close();
     }
 }
